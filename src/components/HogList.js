@@ -36,7 +36,8 @@ function HogList({ hogs, greaseSelection, sortSelection, sortOrder }) {
 
    const hogCards = visibleHogCards.map(hog => {
       return (
-         <div className="ui five wide column">
+         
+         <div className="ui five wide column" key={hog.name}>
             <div className="ui link cards">
                <div className="card">
                   <div className="image">
